@@ -1,0 +1,164 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0c0ec;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+.main-container {
+    background-color: #007bff;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Weather info styling */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Input search styling */
+.input_search {
+    margin-bottom: 20px;
+}
+
+input[type="search"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Weather details styling */
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.weather-details div {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    background: #e0e0e0;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.weather-details p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+
+}
+
+/* Daily overview styling */
+.daily-overview {
+    margin-top: 20px;
+}
+
+.daily-overview h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.daily-overview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.daily-overview li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.city {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff0000;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .weather-info {
+        padding: 10px;
+    }
+
+    input[type="search"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+
+    .weather-details div {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .daily-overview li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    input[type="search"] {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .weather-details div {
+        font-size: 14px;
+    }
+
+    .daily-overview h2 {
+        font-size: 16px;
+    }
+
+    .daily-overview li {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
